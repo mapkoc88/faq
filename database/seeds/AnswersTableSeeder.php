@@ -11,6 +11,7 @@ class AnswersTableSeeder extends Seeder
      */
     public function run()
     {
+
         $users = App\User::inRandomOrder();
             $users->each(function ($user) {
                 $question = App\Question::inRandomOrder()->first();
@@ -19,5 +20,6 @@ class AnswersTableSeeder extends Seeder
                 $answer->question()->associate($question);
                 $answer->save();
             });
-        }
+
+    }
 }
