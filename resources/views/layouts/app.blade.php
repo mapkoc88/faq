@@ -34,7 +34,13 @@
                 <a class="navbar-brand" href="{{ route('home') }}">
                     Home
                 </a>
-                <img src="{{ Auth::user()->image }}" height="50" width="50">
+
+                @if (Auth::user()->image)
+                    <img src="{{ Auth::user()->image }}" height="50" width="50">
+                @else
+                    <a></a>
+                @endif
+
             @endguest
 
 

@@ -13,7 +13,7 @@ class AnswersTableSeeder extends Seeder
     {
 
         $users = App\User::inRandomOrder();
-        for ($i = 1; $i <= 4; $i++) {
+        for ($i = 1; $i <= 10; $i++) {
             $users->each(function ($user) {
                 $question = App\Question::inRandomOrder()->first();
                 $answer = factory(\App\Answer::class)->make();
