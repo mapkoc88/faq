@@ -29,7 +29,7 @@ return [
     'google' => [
         'client_id' => '499850803805-i1klmdgmjb3jojourhqj27gnq6p9b04r.apps.googleusercontent.com',
         'client_secret' => '6tWadW4NZ1V3ey8dXLgai6Qq',
-        'redirect' => 'http://localhost:8000/callback'
+        'redirect' => 'https://faq-markos.herokuapp.com/callback'
 
     ],
 
