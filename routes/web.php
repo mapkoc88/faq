@@ -33,6 +33,9 @@ Route::post('/questions/{question_id}/answers/', 'AnswerController@store')->name
 Route::patch('/questions/{question_id}/answer/{answer_id}', 'AnswerController@update')->name('answer.update');
 Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@destroy')->name('answer.destroy');
 
+Route::get('/redirect', 'SocialAuthGoogleController@redirect');
+Route::get('/callback/', 'SocialAuthGoogleController@callback');
+
 
 Route::resources([
     'questions' => 'QuestionController',

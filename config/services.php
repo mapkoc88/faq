@@ -26,6 +26,13 @@ return [
         'region' => env('SES_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => '499850803805-i1klmdgmjb3jojourhqj27gnq6p9b04r.apps.googleusercontent.com',
+        'client_secret' => '6tWadW4NZ1V3ey8dXLgai6Qq',
+        'redirect' => 'http://localhost:8000/callback'
+
+    ],
+
     'sparkpost' => [
         'secret' => env('SPARKPOST_SECRET'),
     ],
